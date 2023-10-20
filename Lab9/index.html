@@ -160,6 +160,11 @@
   popup.setLngLat(coordinates[0][0]).setHTML(description).addTo(map);
 });
     });
+    
+    map.on('mouseleave', 'affHousing', function() {
+      map.getCanvas().style.cursor = '';
+      popup.remove();
+    });
 
     map.on('load',function(){
       // Give your layer's source a nickname you'll remember easily.
