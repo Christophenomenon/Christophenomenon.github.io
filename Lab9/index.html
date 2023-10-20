@@ -47,22 +47,22 @@
               <input id='affHousing' type='checkbox' name='viz-toggle' checked='checked'>
           </label>
           <label class='check-container'>Co-Op
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#FFBE0B'></span>
           </label>
           <label class='check-container'>Shelter
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#FB5607'></span>
           </label>
           <label class='check-container'>HPD subsized
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#FF006E'></span>
           </label>
           <label class='check-container'>Mobile Home
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#8338EC'></span>
           </label>
           <label class='check-container'>Public Housing
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#3A86FF'></span>
           </label>
           <label class='check-container'>Single-Residency Housing
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#8ac926'></span>
           </label>
           <label class='check-container'>Other
               <span class="legend-key" style='background:#CCC'></span>
@@ -188,18 +188,17 @@
         'source':'housetype',
         'source-layer':'PLUTO_HOUS_TYPE_MASTER_Featu-7b5u7f',
         'paint':{
-          'line-color':[
-      'match',
-      ['get', 'hous_type'], // Property to match
-      'coop', '#FFBE0B',    // If house_type is 'Type1', use this color
-      'homeless', '#FB5607',    // If house_type is 'Type2', use this color
-      'hpd_sub', '#FF006E',    // If house_type is 'Type3', use this color
-      'mob_home', '#8338EC',    // If house_type is 'Type1', use this color
-      'pub_hou', '#3A86FF',    // If house_type is 'Type2', use this color
-      'sro', '#8ac926',    // If house_type is 'Type3', use this color
-      '#CCCCCC'               // Fallback color
+          'line-color':['match',
+      ['get', 'hous_type'], 
+      'coop', '#FFBE0B',    
+      'homeless', '#FB5607',   
+      'hpd_sub', '#FF006E',   
+      'mob_home', '#8338EC',  
+      'pub_hou', '#3A86FF',   
+      'sro', '#8ac926',   
+      '#CCCCCC'               
     ],
-          'line-opacity': 0.3,
+          'line-opacity': 0.7,
           'line-width': 2
         }
       });
