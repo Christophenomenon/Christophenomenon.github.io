@@ -188,7 +188,17 @@
         'source':'housetype',
         'source-layer':'PLUTO_HOUS_TYPE_MASTER_Featu-7b5u7f',
         'paint':{
-          'line-color':'#00158f',
+          'line-color':[
+      'match',
+      ['get', 'hous_type'], // Property to match
+      'coop', '#FFBE0B',    // If house_type is 'Type1', use this color
+      'homeless', '#FB5607',    // If house_type is 'Type2', use this color
+      'hpd_sub', '#FF006E',    // If house_type is 'Type3', use this color
+      'mob_home', '#8338EC',    // If house_type is 'Type1', use this color
+      'pub_hou', '#3A86FF',    // If house_type is 'Type2', use this color
+      'sro', '#8ac926',    // If house_type is 'Type3', use this color
+      '#CCCCCC'               // Fallback color
+    ],
           'line-opacity': 0.3,
           'line-width': 2
         }
