@@ -131,6 +131,11 @@
 
     map.on('load',function(){
       // Give your layer's source a nickname you'll remember easily.
+      map.addSource('housetype',{
+        'type':'vector',
+        'url': 'mapbox://iamwfx.ab4g098q'
+      });
+
       map.addSource('sandyLayer',{
         'type':'vector',
         'url': 'mapbox://iamwfx.bpjzmy2b'
@@ -176,6 +181,18 @@
         'url': 'mapbox://iamwfx.8thgevrt'
       });
 
+
+      map.addLayer({
+        'id':'affHousing',
+        'type':'line',
+        'source':'housetype',
+        'source-layer':'PLUTO_HOUS_TYPE_MASTER_Featu-7b5u7f',
+        'paint':{
+          'line-color':'#00158f',
+          'line-opacity': 0.3,
+          'line-width': 2
+        }
+      });
 
       map.addLayer({
         'id':'povertyLevel',
