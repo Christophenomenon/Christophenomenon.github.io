@@ -130,6 +130,43 @@
   });
 
     map.on('load',function(){
+      const popup = new mapboxgl.Popup({
+      closeButton: false,
+      closeOnClick: false
+      });
+
+    map.on('mouseenter','affHousing',function(e){
+        const coordinates = e.features[0].geometry.coordinates.slice();
+          // Here's that function that does the transformation
+  function emptyToYesNo(val){
+    if (val == null || val == undefined){
+      return "No"} else {return "Yes"};
+  }
+  const Address = e.features[0].properties.Address;
+  const BBL = e.features[0].properties.BBL;
+  const Council = e.features[0].properties.Council;
+  const P_2050_1 =emptyToYesNo(e.features[0].properties.P_2050_1); // We apply this function to our value.
+  /// THERE ARE THREE MORE VARIABLES MISSING!
+  const P_2050_5 =emptyToYesNo(e.features[0].properties.P_2050_5); 
+  const P_2100_1 =emptyToYesNo(e.features[0].properties.P_2100_1); 
+  const P_2100_5 =emptyToYesNo(e.features[0].properties.P_2100_5); 
+  /// FILL IN THE REST
+  var description = '<h4> ' +Address+'<br>'+
+                    'BBL: '+BBL+'<br>'+
+                    'City Council District: '+Council+ '</h4>'+
+                    '<p> In 2050 1 in 100yr Floodplain?: '+ P_2050_1 + '<br>' + 'In 2050 1 in 500yr Floodplain?: '+P_2050_5 +'<br>'+
+                    'In 2100 1 in 100yr Floodplain?: '+P_2100_1 +'<br>'+
+                    'In 2100 1 in 500yr Floodplain?: '+P_2100_5 +'</p>'
+  popup.setLngLat(coordinates[0][0]).setHTML(description).addTo(map);
+});
+    });
+    
+    map.on('mouseleave', 'affHousing', function() {
+      map.getCanvas().style.cursor = '';
+      popup.remove();
+    });
+
+    map.on('load',function(){
       // Give your layer's source a nickname you'll remember easily.
       map.addSource('housetype',{
         'type':'vector',
@@ -306,42 +343,6 @@
         }
       });
 
-  map.on('load',function(){
-      const popup = new mapboxgl.Popup({
-      closeButton: false,
-      closeOnClick: false
-      });
-
-    map.on('mouseenter','affHousing',function(e){
-        const coordinates = e.features[0].geometry.coordinates.slice();
-          // Here's that function that does the transformation
-  function emptyToYesNo(val){
-    if (val == null || val == undefined){
-      return "No"} else {return "Yes"};
-  }
-  const Address = e.features[0].properties.Address;
-  const BBL = e.features[0].properties.BBL;
-  const Council = e.features[0].properties.Council;
-  const P_2050_1 =emptyToYesNo(e.features[0].properties.P_2050_1); // We apply this function to our value.
-  /// THERE ARE THREE MORE VARIABLES MISSING!
-  const P_2050_5 =emptyToYesNo(e.features[0].properties.P_2050_5); 
-  const P_2100_1 =emptyToYesNo(e.features[0].properties.P_2100_1); 
-  const P_2100_5 =emptyToYesNo(e.features[0].properties.P_2100_5); 
-  /// FILL IN THE REST
-  var description = '<h4> ' +Address+'<br>'+
-                    'BBL: '+BBL+'<br>'+
-                    'City Council District: '+Council+ '</h4>'+
-                    '<p> In 2050 1 in 100yr Floodplain?: '+ P_2050_1 + '<br>' + 'In 2050 1 in 500yr Floodplain?: '+P_2050_5 +'<br>'+
-                    'In 2100 1 in 100yr Floodplain?: '+P_2100_1 +'<br>'+
-                    'In 2100 1 in 500yr Floodplain?: '+P_2100_5 +'</p>'
-  popup.setLngLat(coordinates[0][0]).setHTML(description).addTo(map);
-  });
-    });
-    
-    map.on('mouseleave', 'affHousing', function() {
-      map.getCanvas().style.cursor = '';
-      popup.remove();
-    });
   // Explicitly set the visibility of each to be on or off.
   // There are probably easier ways to do this../
     map.setLayoutProperty('floodZones',"visibility", "visible");
