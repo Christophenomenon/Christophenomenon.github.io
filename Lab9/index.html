@@ -67,7 +67,7 @@
           <label class='check-container'>Other
               <span class="legend-key" style='background:#CCC'></span>
           </label>
-
+      <button id="fly-button">Fly to AAP-NYC</button>
       <br>
           <!-- <h3>Race and Socioeconomic Status</h3> -->
           <label class='check-container'>
@@ -167,6 +167,16 @@
       map.getCanvas().style.cursor = 'default';
       popup.remove();
     });
+
+const flyButton = document.getElementById("fly-button");
+flyButton.addEventListener("click", function () {
+  map.flyTo({
+    center: [-74.01648236270078,40.70271455297441], 
+    zoom: 16, // zoom level
+    essential: true // this animation is considered essential with respect to prefers-reduced-motion
+  });
+});
+
 
     map.on('load',function(){
       // Give your layer's source a nickname you'll remember easily.
