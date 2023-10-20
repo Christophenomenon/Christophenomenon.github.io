@@ -163,7 +163,7 @@
     
     map.on('mouseleave', 'affHousing', function() {
       map.getCanvas().style.cursor = 'default';
-      popup.remove();
+      this.remove();
     });
 
     map.on('load',function(){
