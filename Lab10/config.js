@@ -1,6 +1,6 @@
 var config = {
-    style: 'mapbox://styles/mapbox/dark-v11',
-    accessToken: 'pk.eyJ1IjoiaGg3NTgiLCJhIjoiY2xuMXo5bjQxMDJ5YzJrbGpvbXZudTVudSJ9.SzlG3WInkn7aWBEYPJkw0A',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    accessToken: 'pk.eyJ1IjoiaWFtd2Z4IiwiYSI6ImNqNGFnMnIyMzEwZzgycXJ1ODdqbG14eGMifQ.3AqBqXZlcbsbEhxddAPB-g',
     showMarkers: true,
     markerColor: '#3FB1CE',
     //projection: 'equirectangular',
@@ -52,10 +52,10 @@ var config = {
             image: 'images/source.png',
             description: 'Copy these sections to add to your story.',
             location: {
-                center: [-77.020636, 38.886900],
-                zoom: 8.5,
-                pitch: 60,
-                bearing: -43.2,
+                center: [-76.48425, 42.45091],
+                zoom: 17.27,
+                pitch: 38.64,
+                bearing: 0,
                 // flyTo additional controls-
                 // These options control the flight curve, making it move
                 // slowly and zoom out almost completely before starting
@@ -64,7 +64,7 @@ var config = {
                 //curve: 1, // change the speed at which it zooms out
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: true,
+            rotateAnimation: false,
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
