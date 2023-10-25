@@ -78,7 +78,7 @@ var config = {
             description: 'Copy these sections to add to your story.',
             location: {
                 center: [-73.99535, 40.73757],
-                zoom: 12.52,
+                zoom: 14,
                 pitch: 8.01,
                 bearing: 0.00
             },
