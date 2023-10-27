@@ -22,7 +22,7 @@ var config = {
             image: 'images/source.png',
             description: 'In the fall of 2012, New York City was hit with hurricane that left tens of thousands of public housing residents without power for days or even weeks]. New York City Housing Authority public housing developments were affected. 24,000 government-subsidized apartments and 40,000 rent-stabilized apartments were also affected.',
             location: {
-                center: [-74.01648236270078,41],
+                center: [-74.013,40.70271455297441],
                 zoom: 12,
                 pitch: 60,
                 bearing: 0
