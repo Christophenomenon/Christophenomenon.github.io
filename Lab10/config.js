@@ -51,7 +51,7 @@ var config = {
             image: 'images/source.png',
             description: 'Copy these sections to add to your story.',
             location: {
-                center: [-76.48425, 42.45091],
+                center: [-77.48425, 42.45091],
                 zoom: 17.27,
                 pitch: 38.64,
                 bearing: 0,
