@@ -9,9 +9,9 @@ var config = {
     inset: true,
     theme: 'dark',
     use3dTerrain: false, //set true for enabling 3D maps.
-    title: 'The Title Text of this Story',
-    subtitle: 'A descriptive and interesting subtitle to draw in the reader',
-    byline: 'By a Digital Storyteller',
+    title: 'Coastal Flooding in New York City',
+    subtitle: 'Assessing Risks to Vulnerable Housing',
+    byline: 'By Hongtao',
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {

@@ -348,9 +348,5 @@ function addInsetLayer(bounds) {
 function updateInsetLayer(bounds) {
     insetMap.getSource('boundsSource').setData(bounds);
 }
-
-
-
 // setup resize event
 window.addEventListener('resize', scroller.resize);
-
