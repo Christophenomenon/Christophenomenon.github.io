@@ -24,8 +24,8 @@ var config = {
             image: 'images/source.png',
             description: 'In the fall of 2012, New York City was hit with hurricane that left tens of thousands of public housing residents without power for days or even weeks]. New York City Housing Authority public housing developments were affected. 24,000 government-subsidized apartments and 40,000 rent-stabilized apartments were also affected.',
             location: {
-                center: [-122.418398, 37.759483],
-                zoom: 8.5,
+                center: [-74.013,40.70271455297441],
+                zoom: 12,
                 pitch: 60,
                 bearing: 0
             },
@@ -50,12 +50,12 @@ var config = {
             id: 'second-chapter',
             alignment: 'right',
             hidden: false,
-            title: 'Second Title',
+            title: 'Red Hook Houses',
             image: 'images/resource.png',
-            description: 'Copy these sections to add to your story.',
+            description: 'The Red Hook Houses are two connected public housing complexes located in Red Hook, Brooklyn, New York City. Managed by the New York City Housing Authority (NYCHA), they comprise the largest housing development in Brooklyn.The map uses two data sources from the NYC Open Data portal: the Map of NYCHA Developments and the Sandy Inundation Zone. The map aims to illustrate the vulnerability of the NYCHA residents to coastal flooding and storm surge.',
             location: {
-                center: [-77.020636, 38.886900],
-                zoom: 8.5,
+                center: [-74.004608, 40.675838],
+                zoom: 18.5,
                 pitch: 60,
                 bearing: -43.2,
                 // flyTo additional controls-
@@ -88,9 +88,9 @@ var config = {
             id: 'third-chapter',
             alignment: 'left',
             hidden: false,
-            title: 'Third Title',
-            image: './path/to/image/source.png',
-            description: 'Copy these sections to add to your story.',
+            title: 'Why this area is white?',
+            image: 'image/sandy1.png',
+            description: 'Where is it?',
             location: {
               center: [-73.97615, 40.71901],
               zoom: 15.84,
