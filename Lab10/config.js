@@ -47,9 +47,9 @@ var config = {
             id: 'second-identifier',
             alignment: 'right',
             hidden: false,
-            title: 'Second Title',
+            title: 'Red Hook Houses',
             image: 'images/resource.png',
-            description: 'Copy these sections to add to your story.',
+            description: 'The Red Hook Houses are two connected public housing complexes located in Red Hook, Brooklyn, New York City. Managed by the New York City Housing Authority (NYCHA), they comprise the largest housing development in Brooklyn.The map uses two data sources from the NYC Open Data portal: the Map of NYCHA Developments and the Sandy Inundation Zone. The map aims to illustrate the vulnerability of the NYCHA residents to coastal flooding and storm surge.',
             location: {
                 center: [-74.004608, 40.675838],
                 zoom: 17.27,
