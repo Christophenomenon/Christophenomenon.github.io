@@ -48,10 +48,10 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Second Title',
-            image: 'images/source.png',
+            image: 'images/resource.png',
             description: 'Copy these sections to add to your story.',
             location: {
-                center: [-77.48425, 42.45091],
+                center: [-74.004608, 40.675838],
                 zoom: 17.27,
                 pitch: 38.64,
                 bearing: 0,
@@ -61,44 +61,6 @@ var config = {
                 // to pan.
                 //speed: 2, // make the flying slow
                 //curve: 1, // change the speed at which it zooms out
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
-            id: 'third-identifier',
-            alignment: 'left',
-            hidden: false,
-            title: 'Third Title',
-            image: 'images/source.png',
-            description: 'Copy these sections to add to your story.',
-            location: {
-                center: [-73.99535, 40.73757],
-                zoom: 14,
-                pitch: 8.01,
-                bearing: 0.00
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
-        },
-        {
-            id: 'fourth-chapter',
-            alignment: 'fully',
-            hidden: false,
-            title: 'Third Title',
-            image: 'images/source.png',
-            description: 'Copy these sections to add to your story.',
-            location: {
-                center: [-58.54195, -34.71600],
-                zoom: 4,
-                pitch: 0,
-                bearing: 0
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
