@@ -15,7 +15,6 @@ var config = {
     para1: 'Coastal flooding is a serious threat to New York City, and its impacts are expected to worsen with climate change. Sea levels are rising, and coastal storms are becoming more frequent and intense. As a result, coastal flooding can cause damage to property and infrastructure, disrupt transportation and communication, and pose a risk to human health and safety.',
     para2: 'Assessing risks to vulnerable housing is an important step in developing and implementing effective policies and programs to protect these communities. Vulnerable housing can be defined as housing that is at risk of damage or destruction from natural hazards, such as floods, earthquakes, or wildfires, or from human-caused hazards, such as pollution or neglect.',
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
-    video: 'images/902-1_902-2364-PD2_preview.mp4',
     chapters: [
         {
             id: 'first-chapter',
@@ -52,7 +51,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Second Title',
-            image: 'images/source.png',
+            image: 'images/resource.png',
             description: 'Copy these sections to add to your story.',
             location: {
                 center: [-77.020636, 38.886900],
@@ -77,6 +76,7 @@ var config = {
             alignment: 'center',
             hidden: false,
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ultricies tempor purus, eget tempus sem bibendum vel. Maecenas at justo non felis accumsan condimentum vitae et leo. Sed sodales nec risus maximus congue. Ut quis tincidunt leo. Pellentesque sapien nisl, congue tempus mauris in, pulvinar mattis turpis. Nullam sit amet justo egestas, laoreet mauris ut, pulvinar ipsum. Pellentesque vehicula imperdiet iaculis. Nam in tellus metus. Donec a est non orci efficitur ornare id mattis eros. Aliquam vel facilisis ligula. Nullam tincidunt, sapien vitae bibendum consequat, nibh eros eleifend ligula, et aliquam enim justo eget felis. Sed nec vehicula metus. Pellentesque rutrum dui quis egestas hendrerit. Nullam auctor et tortor sit amet congue.',
+            video:'images/902-1_902-2364-PD2_preview.mp4',
             location: {
                 center: [-73.97615, 40.71901],
                 zoom: 14.84,
