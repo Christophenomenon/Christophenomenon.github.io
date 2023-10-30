@@ -3,7 +3,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoiaGg3NTgiLCJhIjoiY2xuMXo5bjQxMDJ5YzJrbGpvbXZud
 const map = new mapboxgl.Map({
   container: 'map', // container id
   style: 'mapbox://styles/hh758/clnb2oxm807hp01ph5taph6yv', // replace this with your style URL,
-  center: [-73.935242, 40.730610], // The convention for coordinates is  typically [long, lat]
+  center: [-122.42285, 37.76869], // The convention for coordinates is  typically [long, lat]
   zoom: 12 // The zoom level can be any decimal number
 });
 map.on('load',function(){});
