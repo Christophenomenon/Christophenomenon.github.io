@@ -12,8 +12,6 @@ map.on('load',function(){
   map.addSource('restaurantSource', {
             'type': 'vector',
             'url': 'mapbox://hh758.6j053w3c',
-            'tileSize': 512,
-            'maxzoom': 14
         });
   map.addLayer({
     'id':'restaurantLayer',
