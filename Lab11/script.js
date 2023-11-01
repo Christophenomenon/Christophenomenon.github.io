@@ -8,4 +8,20 @@ const map = new mapboxgl.Map({
   bearing: -40
 });
 map.on('load',function(){  
+  console.log('亖');
+  map.addSource('restaurantSource', {
+            'type': 'vector',
+            'url': 'mapbox://hh758.6j053w3c',
+            'tileSize': 512,
+            'maxzoom': 14
+        });
+  map.addLayer({
+    'id':'restaurantLayer',
+    'type':'circle',
+    'source':'restaurantSource',
+    'source-layer':'Historical_Restaurant_Scores_-7dap0l',
+    'paint':{
+      'circle-color':'#008F8C',
+    }
+  });
 });
