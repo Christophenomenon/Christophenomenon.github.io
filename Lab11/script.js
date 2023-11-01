@@ -27,4 +27,5 @@ map.on('load',function(){
         var textField = document.getElementById('restText');
         textField.innerHTML = name;
   });
+  console.log('④');
 });
