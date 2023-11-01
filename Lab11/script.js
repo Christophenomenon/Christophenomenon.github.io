@@ -22,7 +22,7 @@ map.on('load',function(){
     }
   });
   map.on('mouseenter','restaurantLayer',function(e){
-        console.log('亖');
+        console.log(e.features[0]['properties']['business_name']);
         var name = e.features[0]['properties']['business_name'];
         var textField = document.getElementById('restText');
         textField.innerHTML = name;
