@@ -8,7 +8,6 @@ const map = new mapboxgl.Map({
   bearing: -40
 });
 map.on('load',function(){  
-  console.log('亖');
   map.addSource('restaurantSource', {
             'type': 'vector',
             'url': 'mapbox://hh758.6j053w3c',
@@ -23,6 +22,7 @@ map.on('load',function(){
     }
   });
   map.on('mouseenter','restaurantLayer',function(e){
+        console.log('亖');
         var name = e.features[0]['properties']['business_name'];
         var textField = document.getElementById('restText');
         textField.innerHTML = name;
