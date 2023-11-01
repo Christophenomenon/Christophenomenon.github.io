@@ -22,4 +22,9 @@ map.on('load',function(){
       'circle-color':'#008F8C',
     }
   });
+  map.on('mouseenter','restaurantLayer',function(e){
+        var name = e.features[0]['properties']['business_name'];
+        var textField = document.getElementById('restText');
+        textField.innerHTML = name;
+  });
 });
