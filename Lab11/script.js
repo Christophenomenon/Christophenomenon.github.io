@@ -18,7 +18,16 @@ map.on('load',function(){
     'source':'restaurantSource',
     'source-layer':'Historical_Restaurant_Scores_-7dap0l',
     'paint':{
-      'circle-color':'#008F8C',
+      'circle-color':[
+        'match',
+        ['to-number',['get', 'inspection_score']],
+        45, '#440154',
+        80, '#3b528b',
+        85, '#21908d',
+        90, '#5dc963',
+        95, '#fde725',
+        'gray' // Default color for any other value not in the ranges
+      ],
     }
   });
   map.on('mouseenter','restaurantLayer',function(e){

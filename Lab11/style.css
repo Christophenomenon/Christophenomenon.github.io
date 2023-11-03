@@ -21,3 +21,22 @@ body {
 #title{}
 #restaurant_name{}
 #restName{}
+#restText{}
+
+.map-overlay {
+  position: absolute;
+  bottom: 20px;
+  right: 200px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.legend-color {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 1px solid #000;
+}
