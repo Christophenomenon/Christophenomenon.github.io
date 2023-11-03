@@ -21,11 +21,11 @@ map.on('load',function(){
       'circle-color':[
         'match',
         ['to-number',['get', 'inspection_score']],
-        45, '#440154',
-        80, '#3b528b',
-        85, '#21908d',
-        90, '#5dc963',
-        95, '#fde725',
+        45, '#FF0000 ',
+        80, '#FFA500 ',
+        85, '#FFFF00 ',
+        90, '#ADFF2F ',
+        95, '#008000 ',
         'gray' // Default color for any other value not in the ranges
       ],
     }
